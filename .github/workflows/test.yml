@@ -8,6 +8,6 @@ jobs:
   add-card:
     runs-on: ubuntu-latest
     steps:
-    - name: Install SSH
-      run: echo "${{ github.events.issue.id }}, ${{ github.events.issue.number }}"
+    - name: debug
+      run: echo "${{ toJson(github) }}"
       
