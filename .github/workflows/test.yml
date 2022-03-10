@@ -10,4 +10,6 @@ jobs:
     steps:
     - name: debug
       run: echo "${{ toJson(github) }}"
+    - name: echo
+      run: echo "${{ github.event.issue.id }}, ${{ github.event.issue.number }}"
       
