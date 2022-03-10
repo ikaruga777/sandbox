@@ -18,7 +18,7 @@ jobs:
         script: |
           await github.request('POST /projects/columns/{column_id}/cards', {
             'column_id': 18094552 
-            'content_id': ${{ github.event.issue.id }},
+            'content_id': '${{ github.event.issue.id }}',
             'content_type': 'Issue'
           })
       
